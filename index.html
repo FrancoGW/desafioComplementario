@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Proyectos con JavaScript</title>
+  </head>
+  <body>
+    <h1 id="para">Change Color</h1>
+    <button onclick="changeColor('red');">Red</button>
+    <button onclick="changeColor('purple');">Purple</button>
+
+    <div>
+      <h1>calculate your average</h1>
+      <form action="">
+        <p>Note 1</p>
+        <input id="valor1" type="number" />
+        <p>Note 2</p>
+        <input id="valor2" type="number" />
+        <p>Resultado</p>
+        <a id="boton" onclick="calculadora()" type="submit">Send</a>
+        <ul id="resultado">
+          
+        </ul>
+      </form>
+    </div>
+
+    <div class="alumnos">
+      <h2>Alumnos</h2>
+      <ul>
+        <li>Juan</li>
+        <li>Pedro</li>
+        <li>Nacho</li>
+      </ul>
+      <p>
+        Quieres saber la nota de alguno? Coloca su nombre aqui abajo y apretar
+        "Averiguar"
+      </p>
+      <input type="text" name="" id="resultadoAlumno"> 
+      <input onclick="resultadoAlumnos()" type="submit" value="averiguar">
+      <div class="resultadoAlumnosContent"" id="resultadoImpresoAlumno">
+        
+      </div>
+    </div>
+
+    <script type="text/JavaScript" src="index.js"></script>
+  </body>
+</html>
