@@ -1,9 +1,9 @@
-// let welcome = parseInt(prompt('Welcome to my page insert your name! :'));
-// let edad = parseInt(prompt("How old are you?"))
+let welcome = parseInt(prompt('Welcome to my page insert your name! :'));
+let edad = parseInt(prompt("How old are you?"))
 
-// if(edad >= 18){
-//     alert('Your age is ' + edad + '🫡')
-// }
+if(edad >= 18){
+    alert('Your age is ' + edad + '🫡')
+}
 
 function changeColor(newColor) {
   let elem = document.getElementById("para");
@@ -36,5 +36,17 @@ function resultadoAlumnos() {
   } else {
     alert("No hay nada");
   }
-
+ 
+ 
+}
+function agregarAlumno(){
+    let agregar = prompt('ingresa el nombre : ');
+    let nota = prompt('agregar la nota: ');
+    let ul = document.getElementById('ul');
+    const arrayAlumnos = ["10", "5", "8"];
+    notaAdd = arrayAlumnos.push(nota);
+    console.log(arrayAlumnos)
+    console.log(agregar + " Se saco un " + nota)
+    ul.innerHTML = agregar;
+    ul.innerHTML;     
 }
